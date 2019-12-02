@@ -18,7 +18,19 @@ public class Day2 {
                     .mapToInt(s -> Integer.valueOf(s))
                     .toArray();
 
+            System.out.println("***** First half");
             System.out.println(runProgram(program, 12, 2));
+
+            System.out.println("***** Second half");
+            for (int noun = 0; noun < 100; noun++) {
+                for (int verb = 0; verb < 100; verb++) {
+                    int result = runProgram(program, noun, verb);
+                    if (result == 19690720) {
+                        System.out.println(100 * noun + verb);
+                        break;
+                    }
+                }
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
