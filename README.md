@@ -1,2 +1,2 @@
 # Advent of Code 2019
-My Java solutions.
+My solutions for the Advent of Code 2019 puzzles in Java and Kotlin.
